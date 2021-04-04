@@ -1,0 +1,10 @@
+extern const GeoLayout wood_plat_geo[];
+extern Lights1 wood_plat_f3d_material_lights;
+extern u8 wood_plat_Wood_1_ci8[];
+extern u8 wood_plat_Wood_1_ci8_pal_rgba16[];
+extern Vtx wood_plat_000_displaylist_mesh_layer_1_vtx_0[22];
+extern Gfx wood_plat_000_displaylist_mesh_layer_1_tri_0[];
+extern Gfx mat_wood_plat_f3d_material[];
+extern Gfx mat_revert_wood_plat_f3d_material[];
+extern Gfx wood_plat_000_displaylist_mesh_layer_1[];
+extern Gfx wood_plat_material_revert_render_settings[];

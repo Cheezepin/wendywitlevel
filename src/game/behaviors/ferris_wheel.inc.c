@@ -8,6 +8,9 @@
 /**
  * Properties for the ferris wheel axle and platforms.
  */
+
+#include "levels/castle_grounds/header.h"
+
 struct FerrisWheelProperties {
     void const *axleCollision;
     void const *platformCollision;
@@ -20,6 +23,7 @@ struct FerrisWheelProperties {
 static struct FerrisWheelProperties sFerrisWheelProperties[] = {
     { bits_seg7_collision_0701ACAC, bits_seg7_collision_0701AC28, MODEL_BITS_BLUE_PLATFORM },
     { bitdw_seg7_collision_0700F7F0, bitdw_seg7_collision_0700F898, MODEL_BITDW_BLUE_PLATFORM },
+    { axle_collision, wood_plat_collision, MODEL_BITDW_BLUE_PLATFORM },
 };
 
 /**
@@ -32,6 +36,10 @@ void bhv_ferris_wheel_axle_init(void) {
     s32 i;
 
     o->collisionData = segmented_to_virtual(sFerrisWheelProperties[o->oBehParams2ndByte].axleCollision);
+
+    if(o->oBehParams2ndByte == 2) {
+        cur_obj_scale(2.0f);
+    }
 
     for (i = 0; i < 4; i++) {
         platform = spawn_object_relative(i, 0, 0, 0, o,
@@ -51,17 +59,24 @@ void bhv_ferris_wheel_axle_init(void) {
  */
 void bhv_ferris_wheel_platform_update(void) {
     f32 offsetXZ;
+    f32 shit;
     s16 offsetAngle;
 
     obj_perform_position_op(POS_OP_SAVE_POSITION);
 
     offsetAngle = o->parentObj->oFaceAngleRoll + o->oBehParams2ndByte * 0x4000;
-    offsetXZ = 400.0f * coss(offsetAngle);
+    if(o->parentObj->oBehParams2ndByte == 2) {
+        offsetXZ = 800.0f * coss(offsetAngle);
+        shit = 800.0f;
+    } else {
+        offsetXZ = 400.0f * coss(offsetAngle);
+        shit = 400.0f;
+    }
 
     o->oPosX = o->parentObj->oPosX + offsetXZ * sins(o->parentObj->oMoveAngleYaw)
                + 300.0f * coss(o->parentObj->oMoveAngleYaw);
 
-    o->oPosY = o->parentObj->oPosY + 400.0f * sins(offsetAngle);
+    o->oPosY = o->parentObj->oPosY + shit * sins(offsetAngle);
 
     o->oPosZ = o->parentObj->oPosZ + offsetXZ * coss(o->parentObj->oMoveAngleYaw)
                + 300.0f * sins(o->parentObj->oMoveAngleYaw);

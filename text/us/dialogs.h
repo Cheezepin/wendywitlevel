@@ -17,79 +17,36 @@
 #endif
 
 DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
-Wow! You're smack in the\n\
-middle of the battlefield.\n\
-You'll find the Power\n\
-Stars that Bowser stole\n\
-inside the painting\n\
-worlds.\n\
-First, talk to the\n\
-Bob-omb Buddy. (Press [B]\n\
-to talk.) He'll certainly\n\
-help you out, and so will\n\
-his " COMRADES " in other\n\
-areas.\n\
-To read signs, stop, face\n\
-them and press [B]. Press [A]\n\
-or [B] to scroll ahead. You\n\
-can talk to some other\n\
-characters by facing them\n\
-and pressing [B]."))
+Welcome to GameStop,\n\
+what are you buying?\n\
+Before that, would you\n\
+like to join our PowerUp\n\
+rewards program? If you\n\
+join, you get access to f\n\
+What? Something about a\n\
+stock? Ma'am, by the way\n\
+you're talking, it sounds\n\
+like you need to stock up\n\
+on some bitches."))
 
-DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
-Watch out! If you wander\n\
-around here, you're liable\n\
-to be " PLASTERED " by a\n\
-water bomb!\n\
-Those enemy Bob-ombs love\n\
-to fight, and they're\n\
-always finding ways to\n\
-attack.\n\
-This meadow has become\n\
-a battlefield ever since\n\
-the Big Bob-omb got his\n\
-paws on the Power Star.\n\
-Can you recover the Star\n\
-for us? Cross the bridge\n\
-and go left up the path\n\
-to find the Big Bob-omb.\n\
-Please come back to see\n\
-me after you've retrieved\n\
-the Power Star!"))
+DEFINE_DIALOG(DIALOG_001, 1, 2, 95, 200, _("\
+Welcome to Do-mi-no's\n\
+Piii-za!~"))
 
-DEFINE_DIALOG(DIALOG_002, 1, 4, 95, 200, _("\
-Hey, you! It's dangerous\n\
-ahead, so listen up! Take\n\
-my advice.\n\
-\n\
-Cross the two\n\
-bridges ahead, then\n\
-watch for falling\n\
-water bombs.\n\
-The Big Bob-omb at the\n\
-top of the mountain is\n\
-very powerful--don't let\n\
-him grab you!\n\
-We're Bob-omb Buddies,\n\
-and we're on your side.\n\
-You can talk to us\n\
-whenever you'd like to!"))
+DEFINE_DIALOG(DIALOG_002, 1, 1, 95, 200, _("\
+I fucking hate my job"))
 
 DEFINE_DIALOG(DIALOG_003, 1, 5, 95, 200, _("\
-Thank you, Mario! The Big\n\
-Bob-omb is nothing but a\n\
-big dud now! But the\n\
-battle for the castle has\n\
-just begun.\n\
-Other enemies are holding\n\
-the other Power Stars. If\n\
-you recover more Stars,\n\
-you can open new doors\n\
-that lead to new worlds!\n\
-My Bob-omb Buddies are\n\
-waiting for you. Be sure\n\
-to talk to them--they'll\n\
-set up cannons for you."))
+Sorry dude, but what were\n\
+you expecting? We got\n\
+shut down by all those\n\
+zoomers who called us\n\
+『cringe』or whatever.\n\
+There's some leftover tees\n\
+and pins here if you want\n\
+to take 'em, just DON'T\n\
+touch the big thing in the\n\
+back."))
 
 DEFINE_DIALOG(DIALOG_004, 1, 3, 95, 200, _("\
 We're peace-loving\n\
@@ -102,25 +59,35 @@ We'll prepare all of the\n\
 cannons in this course for\n\
 you to use. Bon Voyage!"))
 
-DEFINE_DIALOG(DIALOG_005, 1, 3, 30, 200, _("\
-Hey, Mario! Is it true\n\
-that you beat the Big\n\
-Bob-omb? Cool!\n\
-You must be strong. And\n\
-pretty fast. So, how fast\n\
-are you, anyway?\n\
-Fast enough to beat me...\n\
-Koopa the Quick? I don't\n\
-think so. Just try me.\n\
-How about a race to the\n\
-mountaintop, where the\n\
-Big Bob-omb was?\n\
-Whaddya say? When I say\n\
-『Go,』 let the race begin!\n\
+DEFINE_DIALOG(DIALOG_005, 1, 5, 95, 200, _("\
+Hi, welcome to Subway, how\n\
+may I take your order?\n\
+Please note that we are\n\
+currently out of the\n\
+following ingredients:\n\
+-Pickles\n\
+-Ham\n\
+-Onions\n\
+-Mayo\n\
+-Horseradish\n\
+-Mushrooms\n\
+-Fire Flowers\n\
+-Bread\n\
+-Goomba Meat\n\
+-Maple Syrup\n\
+-Lettuce\n\
+-Olives\n\
+-Yoshi Tail\n\
+-Ranch\n\
+-Tomatoes\n\
+-Honey Mustard\n\
+-Power Stars\n\
+-Chicken\n\
 \n\
-Ready....\n\
 \n\
-//Go!////Don't Go"))
+If you don't mind a\n\
+little mold, then we do\n\
+have cheese."))
 
 DEFINE_DIALOG(DIALOG_006, 1, 3, 30, 200, _("\
 Hey!!! Don't try to " SCAM_ME

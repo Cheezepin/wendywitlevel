@@ -379,9 +379,9 @@
 #define MODEL_PENGUIN                     0x57        // penguin_geo
 
 // group 8
-#define MODEL_CAP_SWITCH_EXCLAMATION      0x54        // cap_switch_exclamation_seg5_dl_05002E00
-#define MODEL_CAP_SWITCH                  0x55        // cap_switch_geo
-#define MODEL_CAP_SWITCH_BASE             0x56        // cap_switch_base_seg5_dl_05003120
+#define MODEL_CAP_SWITCH_EXCLAMATION      0xF4        // cap_switch_exclamation_seg5_dl_05002E00
+#define MODEL_CAP_SWITCH                  0xF5        // cap_switch_geo
+#define MODEL_CAP_SWITCH_BASE             0xF6        // cap_switch_base_seg5_dl_05003120
 
 // group 9
 #define MODEL_BOO                         0x54        // boo_geo

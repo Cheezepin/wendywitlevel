@@ -31,3 +31,9 @@
 #include "levels/castle_grounds/areas/1/7/collision.inc.c"
 #include "levels/castle_grounds/areas/1/8/collision.inc.c"
 #include "levels/castle_grounds/areas/1/movtext.inc.c"
+#include "levels/castle_grounds/leveldata.inc.c"
+
+#include "levels/castle_grounds/axle/model.inc.c"
+#include "levels/castle_grounds/axle/collision.inc.c"
+#include "levels/castle_grounds/wood_plat/model.inc.c"
+#include "levels/castle_grounds/wood_plat/collision.inc.c"

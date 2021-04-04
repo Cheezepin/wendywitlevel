@@ -5407,6 +5407,17 @@ const BehaviorScript bhvFerrisWheelAxle[] = {
     END_LOOP(),
 };
 
+const BehaviorScript bhvWoodWheelAxle[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    ADD_INT(oMoveAngleYaw, 0x4000),
+    CALL_NATIVE(bhv_ferris_wheel_axle_init),
+    BEGIN_LOOP(),
+        ADD_INT(oFaceAngleRoll, -200),
+        CALL_NATIVE(load_object_collision_model),
+    END_LOOP(),
+};
+
 const BehaviorScript bhvFerrisWheelPlatform[] = {
     BEGIN(OBJ_LIST_SURFACE),
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),

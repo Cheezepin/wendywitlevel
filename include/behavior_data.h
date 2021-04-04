@@ -479,6 +479,7 @@ extern const BehaviorScript bhvPlatformOnTrack[];
 extern const BehaviorScript bhvTrackBall[];
 extern const BehaviorScript bhvSeesawPlatform[];
 extern const BehaviorScript bhvFerrisWheelAxle[];
+extern const BehaviorScript bhvWoodWheelAxle[];
 extern const BehaviorScript bhvFerrisWheelPlatform[];
 extern const BehaviorScript bhvWaterBombSpawner[];
 extern const BehaviorScript bhvWaterBomb[];
