@@ -15,6 +15,7 @@
 
 #include "actors/common0.h"
 #include "actors/common1.h"
+#include "actors/group0.h"
 #include "actors/group1.h"
 #include "actors/group2.h"
 #include "actors/group3.h"
@@ -6114,6 +6115,16 @@ const BehaviorScript bhvIntroScene[] = {
     OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_intro_scene_loop),
+    END_LOOP(),
+};
+
+const BehaviorScript bhvBrige[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, (OBJ_FLAG_SET_FACE_ANGLE_TO_MOVE_ANGLE | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE | OBJ_FLAG_ACTIVE_FROM_AFAR)),
+    LOAD_COLLISION_DATA(brige_collision),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_brige_update),
+        CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
 };
 

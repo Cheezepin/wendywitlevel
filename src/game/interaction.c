@@ -777,6 +777,8 @@ u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct O
         queue_rumble_data(5, 80);
 #endif
 
+noExit = 1;
+
         if (!noExit) {
             m->hurtCounter = 0;
             m->healCounter = 0;

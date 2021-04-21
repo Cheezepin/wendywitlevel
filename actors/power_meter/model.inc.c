@@ -102,10 +102,10 @@ const Gfx dl_power_meter_base[] = {
 
 // 0x03029530
 static const Vtx vertex_power_meter_health_segments[] = {
-    {{{   -16,    -16,      0}, 0, {     0,    992}, {0xff, 0xff, 0xff, 0xff}}},
-    {{{    15,    -16,      0}, 0, {   992,    992}, {0xff, 0xff, 0xff, 0xff}}},
-    {{{    15,     16,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
-    {{{   -16,     16,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
+    {{{   -16,    -24,      0}, 0, {     0,    992}, {0xff, 0xff, 0xff, 0xff}}},
+    {{{    15,    -24,      0}, 0, {   992,    992}, {0xff, 0xff, 0xff, 0xff}}},
+    {{{    15,     8,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
+    {{{   -16,     8,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
 };
 
 // 0x03029570 - 0x030295A0

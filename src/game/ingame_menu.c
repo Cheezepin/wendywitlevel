@@ -2255,43 +2255,43 @@ void render_pause_my_score_coins(void) {
 
     courseName = segmented_to_virtual(courseNameTbl[courseIndex]);
 
-    if (courseIndex < COURSE_STAGES_COUNT) {
-#ifdef VERSION_EU
-        print_generic_string(48, 157, gTextCourseArr[gInGameLanguage]);
-#else
-        print_generic_string(63, 157, textCourse);
-#endif
-        int_to_str(gCurrCourseNum, strCourseNum);
-#ifdef VERSION_EU
-        print_generic_string(get_string_width(gTextCourseArr[gInGameLanguage]) + 51, 157, strCourseNum);
-#else
-        print_generic_string(CRS_NUM_X1, 157, strCourseNum);
-#endif
+//     if (courseIndex < COURSE_STAGES_COUNT) {
+// #ifdef VERSION_EU
+//         print_generic_string(48, 157, gTextCourseArr[gInGameLanguage]);
+// #else
+//         print_generic_string(63, 157, textCourse);
+// #endif
+//         int_to_str(gCurrCourseNum, strCourseNum);
+// #ifdef VERSION_EU
+//         print_generic_string(get_string_width(gTextCourseArr[gInGameLanguage]) + 51, 157, strCourseNum);
+// #else
+//         //print_generic_string(CRS_NUM_X1, 157, strCourseNum);
+// #endif
 
-        actName = segmented_to_virtual(actNameTbl[(gCurrCourseNum - 1) * 6 + gDialogCourseActNum - 1]);
+//         actName = segmented_to_virtual(actNameTbl[(gCurrCourseNum - 1) * 6 + gDialogCourseActNum - 1]);
 
-        if (starFlags & (1 << (gDialogCourseActNum - 1))) {
-            print_generic_string(TXT_STAR_X, 140, textStar);
-        } else {
-            print_generic_string(TXT_STAR_X, 140, textUnfilledStar);
-        }
-        print_generic_string(ACT_NAME_X, 140, actName);
-#ifndef VERSION_JP
-        print_generic_string(LVL_NAME_X, 157, &courseName[3]);
-#endif
-    }
-#ifndef VERSION_JP
-    else {
-#if defined(VERSION_US) || defined(VERSION_SH)
-        print_generic_string(94, 157, &courseName[3]);
-#elif defined(VERSION_EU)
-        print_generic_string(get_str_x_pos_from_center(159, &courseName[3], 10.0f), 157, &courseName[3]);
-#endif
-    }
-#else
-    print_generic_string(117, 157, &courseName[3]);
-#endif
-    gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
+//         // if (starFlags & (1 << (gDialogCourseActNum - 1))) {
+//         //     print_generic_string(TXT_STAR_X, 140, textStar);
+//         // } else {
+//         //     print_generic_string(TXT_STAR_X, 140, textUnfilledStar);
+//         // }
+//         //print_generic_string(ACT_NAME_X, 140, actName);
+// #ifndef VERSION_JP
+//         print_generic_string(LVL_NAME_X, 157, &courseName[3]);
+// #endif
+//     }
+// #ifndef VERSION_JP
+//     else {
+// #if defined(VERSION_US) || defined(VERSION_SH)
+//         //print_generic_string(94, 157, &courseName[3]);
+// #elif defined(VERSION_EU)
+//         //print_generic_string(get_str_x_pos_from_center(159, &courseName[3], 10.0f), 157, &courseName[3]);
+// #endif
+//     }
+// #else
+//     //print_generic_string(117, 157, &courseName[3]);
+// #endif
+     gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
 }
 
 #if defined(VERSION_JP) || defined(VERSION_SH)
@@ -2614,13 +2614,13 @@ s16 render_pause_courses_and_castle(void) {
             play_sound(SOUND_MENU_PAUSE_HIGHPRIO, gGlobalSoundSource);
 #endif
 
-            if (gCurrCourseNum >= COURSE_MIN && gCurrCourseNum <= COURSE_MAX) {
+            //if (gCurrCourseNum >= COURSE_MIN && gCurrCourseNum <= COURSE_MAX) {
                 change_dialog_camera_angle();
                 gDialogBoxState = DIALOG_STATE_VERTICAL;
-            } else {
-                highlight_last_course_complete_stars();
-                gDialogBoxState = DIALOG_STATE_HORIZONTAL;
-            }
+            //} else {
+            //    highlight_last_course_complete_stars();
+            //    gDialogBoxState = DIALOG_STATE_HORIZONTAL;
+            //}
             break;
         case DIALOG_STATE_VERTICAL:
             shade_screen();
@@ -2628,7 +2628,7 @@ s16 render_pause_courses_and_castle(void) {
             render_pause_red_coins();
 
             if (gMarioStates[0].action & ACT_FLAG_PAUSE_EXIT) {
-                render_pause_course_options(99, 93, &gDialogLineNum, 15);
+                //render_pause_course_options(99, 93, &gDialogLineNum, 15);
             }
 
 #ifdef VERSION_EU

@@ -104,19 +104,13 @@ fast! A human blur!\n\
 Here you go--you've won\n\
 it, fair and square!"))
 
-DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
-BEWARE OF CHAIN CHOMP\n\
-Extreme Danger!\n\
-Get close and press [C]^\n\
-for a better look.\n\
-Scary, huh?\n\
-See the Red Coin on top\n\
-of the stake?\n\
-\n\
-When you collect eight of\n\
-them, a Power Star will\n\
-appear in the meadow\n\
-across the bridge."))
+DEFINE_DIALOG(DIALOG_008, 1, 6, 30, 200, _("\
+Some guy broke in here\n\
+and stole all the stuff.\n\
+Who wakes up and thinks\n\
+『man, I really want to\n\
+steal from Family Dollar\n\
+today!』 I don't get it."))
 
 DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
 Long time, no see! Wow,\n\
@@ -152,7 +146,7 @@ DEFINE_DIALOG(DIALOG_011, 1, 4, 30, 200, _("\
 You've just stepped on\n\
 the Metal Cap Switch!\n\
 The Metal Cap makes\n\
-Mario invincible.\n\
+Kirby invincible.\n\
 Now Metal Caps will\n\
 pop out of all of the\n\
 green blocks you find.\n\
@@ -165,7 +159,7 @@ DEFINE_DIALOG(DIALOG_012, 1, 4, 30, 200, _("\
 You've just stepped on\n\
 the Vanish Cap Switch.\n\
 The Vanish Cap makes\n\
-Mario disappear.\n\
+Kirby disappear.\n\
 Now Vanish Caps will pop\n\
 from all of the blue\n\
 blocks you find.\n\
@@ -181,55 +175,36 @@ power from the castle.\n\
 Do you want to Save?\n\
 //Yes////No"))
 
-DEFINE_DIALOG(DIALOG_014, 1, 4, 30, 200, _("\
-Wow! Another Power Star!\n\
-Mario gains more courage\n\
-from the power of the\n\
-castle.\n\
+DEFINE_DIALOG(DIALOG_014, 1, 3, 30, 200, _("\
+Wow! A Power Star!\n\
+\n\
+\n\
 Do you want to Save?\n\
 \n\
 //You Bet//Not Now"))
 
-DEFINE_DIALOG(DIALOG_015, 1, 4, 30, 200, _("\
-You can punch enemies to\n\
-knock them down. Press [A]\n\
-to jump, [B] to punch.\n\
-Press [A] then [B] to Kick.\n\
-To pick something up,\n\
-press [B], too. To throw\n\
-something you're holding,\n\
-press [B] again."))
+DEFINE_DIALOG(DIALOG_015, 1, 5, 30, 200, _("\
+All of our pizza's in the\n\
+back, dude. You're gonna\n\
+need to give me and Miku\n\
+a minute to get one ready\n\
+if you want it."))
 
 DEFINE_DIALOG(DIALOG_016, 1, 3, 30, 200, _("\
-Hop on the shiny shell and\n\
-ride wherever you want to\n\
-go! Shred those enemies!"))
+Welcome to Olive Garden.\n\
+Sorry to disappoint you,\n\
+but we do not have gardens.\n\
+However, we do have an\n\
+all-you-can-eat buffet.\n\
+Don't die in it!"))
 
-DEFINE_DIALOG(DIALOG_017, 1, 4, 30, 200, _("\
-I'm the Big Bob-omb, lord\n\
-of all blasting matter,\n\
-king of ka-booms the\n\
-world over!\n\
-How dare you scale my\n\
-mountain? By what right\n\
-do you set foot on my\n\
-imperial mountaintop?\n\
-You may have eluded my\n\
-guards, but you'll never\n\
-escape my grasp...\n\
-\n\
-...and you'll never take\n\
-away my Power Star. I\n\
-hereby challenge you,\n\
-Mario!\n\
-If you want the Star I\n\
-hold, you must prove\n\
-yourself in battle.\n\
-\n\
-Can you pick me up from\n\
-the back and hurl me to\n\
-this royal turf? I think\n\
-that you cannot!"))
+DEFINE_DIALOG(DIALOG_017, 1, 3, 30, 200, _("\
+Welcome to Olive Garden.\n\
+Sorry to disappoint you,\n\
+but we do not have gardens.\n\
+However, we do have an\n\
+all-you-can-eat buffet.\n\
+Don't die in it!"))
 
 DEFINE_DIALOG(DIALOG_018, 1, 4, 30, 200, _("\
 I'm sleeping because...\n\

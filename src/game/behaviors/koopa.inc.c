@@ -515,26 +515,38 @@ static void koopa_the_quick_act_wait_before_race(void) {
  * return to the waiting action.
  */
 static void koopa_the_quick_act_show_init_text(void) {
-    s32 response = obj_update_race_proposition_dialog(
-        sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].initText);
+    //s32 response = obj_update_race_proposition_dialog(
+        //sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].initText);
+    //s32 response = cutscene_object_with_dialog(CUTSCENE_DIALOG, o, sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].initText);
 
-    if (response == 1) {
-        UNUSED s32 unused;
+    s32 dialogResponse;
 
-        gMarioShotFromCannon = FALSE;
-        o->oAction = KOOPA_THE_QUICK_ACT_RACE;
-        o->oForwardVel = 0.0f;
+        dialogResponse = cur_obj_update_dialog_with_cutscene(2, DIALOG_UNK2_FLAG_0 | DIALOG_UNK2_LEAVE_TIME_STOP_ENABLED, CUTSCENE_DIALOG, sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].initText);
 
-        o->parentObj = cur_obj_nearest_object_with_behavior(bhvKoopaRaceEndpoint);
-        o->oPathedStartWaypoint = o->oPathedPrevWaypoint =
-            segmented_to_virtual(sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].path);
+        if (dialogResponse == 3) {
+            set_mario_npc_dialog(0);
+            disable_time_stop_including_mario();
+            o->oAction = KOOPA_THE_QUICK_ACT_WAIT_BEFORE_RACE;
+            o->oKoopaTheQuickInitTextboxCooldown = 60;
+        }
 
-        o->oKoopaTurningAwayFromWall = FALSE;
-        o->oFlags |= OBJ_FLAG_ACTIVE_FROM_AFAR;
-    } else if (response == 2) {
-        o->oAction = KOOPA_THE_QUICK_ACT_WAIT_BEFORE_RACE;
-        o->oKoopaTheQuickInitTextboxCooldown = 60;
-    }
+    // if (response == 1) {
+    //     UNUSED s32 unused;
+
+    //     gMarioShotFromCannon = FALSE;
+    //     o->oAction = KOOPA_THE_QUICK_ACT_RACE;
+    //     o->oForwardVel = 0.0f;
+
+    //     o->parentObj = cur_obj_nearest_object_with_behavior(bhvKoopaRaceEndpoint);
+    //     o->oPathedStartWaypoint = o->oPathedPrevWaypoint =
+    //         segmented_to_virtual(sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].path);
+
+    //     o->oKoopaTurningAwayFromWall = FALSE;
+    //     o->oFlags |= OBJ_FLAG_ACTIVE_FROM_AFAR;
+    // } else if (response == 2) {
+    //     o->oAction = KOOPA_THE_QUICK_ACT_WAIT_BEFORE_RACE;
+    //     o->oKoopaTheQuickInitTextboxCooldown = 60;
+    // }
 }
 
 /**
