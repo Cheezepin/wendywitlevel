@@ -8,6 +8,7 @@ extern const GeoLayout bob_geo_000440[];
 extern const GeoLayout bob_geo_000458[];
 extern const GeoLayout bob_geo_000470[];
 extern const GeoLayout bob_geo_000488[];
+extern const GeoLayout grill_geo[];
 
 // leveldata
 extern const Gfx bob_seg7_dl_07004390[];
@@ -27,6 +28,8 @@ extern const Collision bob_seg7_collision_gate[];
 extern const Trajectory bob_seg7_metal_ball_path0[];
 extern const Trajectory bob_seg7_metal_ball_path1[];
 extern const Trajectory bob_seg7_trajectory_koopa[];
+extern const Collision grill_seg7_collision_0702B65C[];
+extern const Gfx grill_seg7_dl_0701FFF8[];
 
 // script
 extern const LevelScript level_bob_entry[];

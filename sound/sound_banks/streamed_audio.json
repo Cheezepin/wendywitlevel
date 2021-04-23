@@ -5,11 +5,17 @@
             "release_rate": 10,
             "envelope": "envelope",
             "sound": "23_custom_star_get"
+        },
+        "inst1": {
+            "release_rate": 10,
+            "envelope": "envelope",
+            "sound": "25_custom_nmh"
         }
     },
     "sample_bank": "streamed_audio",
     "instrument_list": [
-        "inst0"
+        "inst0",
+        "inst1"
     ],
     "envelopes": {
         "envelope": [

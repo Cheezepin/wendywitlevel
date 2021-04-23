@@ -611,11 +611,12 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                 play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.cameraToObject);
                 break;
 
-            case 80:
+            case 152:
                 if ((m->actionArg & 1) == 0) {
                     level_trigger_warp(m, WARP_OP_STAR_EXIT);
                 } else {
                     enable_time_stop();
+                    play_music(SEQ_PLAYER_ENV, SEQUENCE_ARGS(15, SEQ_STREAMED_NMH), 0);
                     create_dialog_box_with_response(gLastCompletedStarNum == 7 ? DIALOG_013 : DIALOG_014);
                     m->actionState = 1;
                 }
@@ -629,13 +630,13 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
     } else if (m->actionState == 2 && is_anim_at_end(m)) {
         disable_time_stop();
         enable_background_sound();
-        dialogID = get_star_collection_dialog(m);
-        if (dialogID != 0) {
+        //dialogID = get_star_collection_dialog(m);
+        //if (dialogID != 0) {
             // look up for dialog
-            set_mario_action(m, ACT_READING_AUTOMATIC_DIALOG, dialogID);
-        } else {
+            //set_mario_action(m, ACT_READING_AUTOMATIC_DIALOG, dialogID);
+        //} else {
             set_mario_action(m, isInWater ? ACT_WATER_IDLE : ACT_IDLE, 0);
-        }
+        //}
     }
 }
 

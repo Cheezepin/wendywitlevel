@@ -44,6 +44,7 @@ enum SeqId {
     SEQ_EVENT_CUTSCENE_LAKITU,        // 0x22 (not in JP)
     SEQ_STREAMED_STAR_GET,
     SEQ_DOUBLE_CHERRY,
+    SEQ_STREAMED_NMH,
     SEQ_COUNT
 };
 
