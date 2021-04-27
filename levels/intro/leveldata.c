@@ -3364,6 +3364,10 @@ ALIGNED8 static const Texture intro_seg7_texture_0700C4A0[] = {
 
 // 0x0700C6A0 - 0x0700C790
 const Gfx intro_seg7_dl_0700C6A0[] = {
+    gsSPEndDisplayList(),
+    
+    gsSPEndDisplayList(),
+
     gsDPPipeSync(),
     gsDPSetCombineMode(G_CC_DECALFADE, G_CC_DECALFADE),
     gsSPTexture(0xFFFF, 0xFFFF, 0, G_TX_RENDERTILE, G_ON),
@@ -3419,3 +3423,5 @@ const f32 intro_seg7_table_0700C880[] = {
     0.048600f, 0.048600f, 0.012800f, 0.012800f,
     0.012800f, 0.000000f, 0.000000f, 0.000000f,
 };
+
+#include "levels/intro/titlescreen/model.inc.c"

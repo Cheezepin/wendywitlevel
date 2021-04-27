@@ -1,0 +1,17 @@
+extern const GeoLayout fourforfour_geo[];
+extern Lights1 fourforfour_f3d_material_lights;
+extern Lights1 fourforfour_f3d_material_001_lights;
+extern u8 fourforfour_colors_ci4[];
+extern u8 fourforfour_colors_ci4_pal_rgba16[];
+extern u8 fourforfour_meat_ci8[];
+extern u8 fourforfour_meat_ci8_pal_rgba16[];
+extern Vtx fourforfour_Circle_mesh_layer_1_vtx_0[538];
+extern Gfx fourforfour_Circle_mesh_layer_1_tri_0[];
+extern Vtx fourforfour_Circle_mesh_layer_1_vtx_1[32];
+extern Gfx fourforfour_Circle_mesh_layer_1_tri_1[];
+extern Gfx mat_fourforfour_f3d_material[];
+extern Gfx mat_revert_fourforfour_f3d_material[];
+extern Gfx mat_fourforfour_f3d_material_001[];
+extern Gfx mat_revert_fourforfour_f3d_material_001[];
+extern Gfx fourforfour_Circle_mesh_layer_1[];
+extern Gfx fourforfour_material_revert_render_settings[];

@@ -18,3 +18,4 @@
 #include "mario/geo.inc.c"
 
 #include "brige/geo.inc.c"
+#include "fourforfour/geo.inc.c"

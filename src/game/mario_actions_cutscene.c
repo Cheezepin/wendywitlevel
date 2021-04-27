@@ -608,7 +608,7 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                 break;
 
             case 42:
-                play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.cameraToObject);
+                //play_sound(SOUND_MARIO_HERE_WE_GO, m->marioObj->header.gfx.cameraToObject);
                 break;
 
             case 152:
@@ -1935,7 +1935,8 @@ static s32 jumbo_star_cutscene_flying(struct MarioState *m) {
     m->particleFlags |= PARTICLE_SPARKLES;
 
     if (m->actionTimer++ == 500) {
-        level_trigger_warp(m, WARP_OP_CREDITS_START);
+        //level_trigger_warp(m, WARP_OP_CREDITS_START);
+        level_trigger_warp(gMarioState, WARP_OP_CREDITS_END);
     }
 
     return FALSE;

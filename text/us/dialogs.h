@@ -41,7 +41,7 @@ Sorry dude, but what were\n\
 you expecting? We got\n\
 shut down by all those\n\
 zoomers who called us\n\
-『cringe』or whatever.\n\
+『cringe』 or whatever.\n\
 There's some leftover tees\n\
 and pins here if you want\n\
 to take 'em, just DON'T\n\
@@ -196,25 +196,45 @@ Sorry to disappoint you,\n\
 but we do not have gardens.\n\
 However, we do have an\n\
 all-you-can-eat buffet.\n\
-Don't die in it!"))
+Don't die in it!\n\
+Speaking of dying, we do\n\
+have something stuck in\n\
+our rafters.\n\
+Mind getting it for us?"))
 
-DEFINE_DIALOG(DIALOG_017, 1, 3, 30, 200, _("\
-Welcome to Olive Garden.\n\
-Sorry to disappoint you,\n\
-but we do not have gardens.\n\
-However, we do have an\n\
-all-you-can-eat buffet.\n\
-Don't die in it!"))
+DEFINE_DIALOG(DIALOG_017, 1, 5, 30, 200, _("\
+I use to work at Wendy's.\n\
+That was a better time in\n\
+my life. Then, some asshole\n\
+barged in there and stole\n\
+our food from the freezer.\n\
+Don't you have like...\n\
+a princess to capture or\n\
+something? Or a lake to\n\
+jump over? Get a life,\n\
+dude.\n\
+I just wanted to grill,\n\
+for god's sake!"))
 
-DEFINE_DIALOG(DIALOG_018, 1, 4, 30, 200, _("\
-I'm sleeping because...\n\
-...I'm sleepy. I don't\n\
-like being disturbed.\n\
-Please walk quietly."))
+DEFINE_DIALOG(DIALOG_018, 1, 5, 30, 200, _("\
+I use to work at Wendy's.\n\
+That was a better time in\n\
+my life. Then, some asshole\n\
+barged in there and stole\n\
+our food from the freezer.\n\
+Don't you have like...\n\
+a princess to capture or\n\
+something? Or a lake to\n\
+jump over? Get a life,\n\
+dude.\n\
+I just wanted to grill,\n\
+for god's sake!"))
 
-DEFINE_DIALOG(DIALOG_019, 1, 2, 30, 200, _("\
-Shhh! Please walk\n\
-quietly in the hallway!"))
+DEFINE_DIALOG(DIALOG_019, 1, 4, 30, 200, _("\
+Oh, hey Kirby. Shit got\n\
+totally funked up in the\n\
+back. No meat. No meat\n\
+man, this is hell."))
 
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
 Dear Mario:\n\
@@ -278,30 +298,8 @@ stairs, you need 70\n\
 Stars.\n\
 Bwa ha ha!"))
 
-DEFINE_DIALOG(DIALOG_030, 1, 6, 30, 200, _("\
-Hello! The Lakitu Bros.,\n\
-cutting in with a live\n\
-update on Mario's\n\
-progress. He's about to\n\
-learn a technique for\n\
-sneaking up on enemies.\n\
-The trick is this: He has\n\
-to walk very slowly in\n\
-order to walk quietly.\n\
-\n\
-\n\
-\n\
-And wrapping up filming\n\
-techniques reported on\n\
-earlier, you can take a\n\
-look around using [C]> and\n\
-[C]<. Press [C]| to view the\n\
-action from a distance.\n\
-When you can't move the\n\
-camera any farther, the\n\
-buzzer will sound. This is\n\
-the Lakitu Bros.,\n\
-signing off."))
+DEFINE_DIALOG(DIALOG_030, 1, 1, 30, 200, _("\
+PEPPERONI SECRET"))
 
 DEFINE_DIALOG(DIALOG_031, 1, 5, 30, 200, _("\
 No way! You beat me...\n\
@@ -1118,19 +1116,16 @@ My troops in the walls\n\
 need them! Bwa ha ha!"))
 
 DEFINE_DIALOG(DIALOG_093, 1, 5, 30, 200, _("\
-Mario! You again! Well\n\
-that's just fine--I've\n\
-been looking for something\n\
-to fry with my fire\n\
-breath!\n\
-Your Star Power is\n\
-useless against me!\n\
-Your friends are all\n\
-trapped within the\n\
-walls...\n\
-And you'll never see the\n\
-Princess again!\n\
-Bwa ha ha ha!"))
+Kirby! I know what you're\n\
+here for--and you're\n\
+NEVER going to get it as\n\
+long as I'm alive!\n\
+\n\
+The Wendy's 4 for 4 will\n\
+be mine FOREVER! If I\n\
+need to teach you a\n\
+lesson to prove that fact,\n\
+I will!"))
 
 DEFINE_DIALOG(DIALOG_094, 1, 4, 30, 200, _("\
 Get a good run up the\n\
@@ -1401,19 +1396,15 @@ I'll be waiting!\n\
 Gwa ha ha ha!"))
 
 DEFINE_DIALOG(DIALOG_121, 1, 5, 30, 200, _("\
-Nooo! It can't be!\n\
-You've really beaten me,\n\
-Mario?!! I gave those\n\
-troops power, but now\n\
-it's fading away!\n\
-Arrgghh! I can see peace\n\
-returning to the world! I\n\
-can't stand it! Hmmm...\n\
-It's not over yet...\n\
-\n\
-C'mon troops! Let's watch\n\
-the ending together!\n\
-Bwa ha ha!"))
+Nooo! It can't be! I'm\n\
+going to lose the\n\
+tender, juicy goodness\n\
+of the 4 for 4 from\n\
+Wendy's!\n\
+This is the worst day of\n\
+my entire life... I hope\n\
+this was worth it for you,\n\
+punk!"))
 
 DEFINE_DIALOG(DIALOG_122, 1, 4, 30, 200, _("\
 The Black Hole\n\

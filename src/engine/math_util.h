@@ -5,6 +5,8 @@
 
 #include "types.h"
 
+#define WORLD_SCALE 3.f
+
 /*
  * The sine and cosine tables overlap, but "#define gCosineTable (gSineTable +
  * 0x400)" doesn't give expected codegen; gSineTable and gCosineTable need to

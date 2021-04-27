@@ -1291,7 +1291,10 @@ void update_mario_button_inputs(struct MarioState *m) {
  * Updates the joystick intended magnitude.
  */
 void update_mario_joystick_inputs(struct MarioState *m) {
+    struct Object *redCoin;
     struct Controller *controller = m->controller;
+    f32 dist;
+    u32 you32;
     f32 mag = ((controller->stickMag / 64.0f) * (controller->stickMag / 64.0f)) * 64.0f;
 
     if (m->squishTimer == 0) {
@@ -1305,6 +1308,12 @@ void update_mario_joystick_inputs(struct MarioState *m) {
         m->input |= INPUT_NONZERO_ANALOG;
     } else {
         m->intendedYaw = m->faceAngle[1];
+    }
+
+    if(gCurrLevelNum == LEVEL_BOB && gCurrAreaIndex == 1) {
+        redCoin = cur_obj_find_nearest_object_with_behavior(bhvRedCoin, &dist);
+        you32 = (u32)((dist - 100.0f) / 100.0f);
+        print_text_fmt_int(8, 8, "RED %d", you32);
     }
 }
 

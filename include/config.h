@@ -23,9 +23,6 @@
 /// Fixes bug where it shows a star when you grab a key in bowser battle stages
 #define BUGFIX_STAR_BOWSER_KEY (0 || VERSION_US || VERSION_EU || VERSION_SH)
 
-// Support Rumble Pak
-#define ENABLE_RUMBLE (1 || VERSION_SH)
-
 // Screen Size Defines
 #define SCREEN_WIDTH 320
 #define SCREEN_HEIGHT 240
@@ -33,9 +30,9 @@
 // Border Height Define for NTSC Versions
 #ifdef TARGET_N64
 #ifndef VERSION_EU
-#define BORDER_HEIGHT 8
+#define BORDER_HEIGHT 0
 #else
-#define BORDER_HEIGHT 1
+#define BORDER_HEIGHT 0
 #endif
 #else
 // What's the point of having a border?

@@ -28,3 +28,4 @@
 
 #include "brige/model.inc.c"
 #include "brige/collision.inc.c"
+#include "fourforfour/model.inc.c"

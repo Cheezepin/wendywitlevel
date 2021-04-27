@@ -757,7 +757,7 @@ void bowser_act_dance(void) {
 
 void bowser_spawn_grand_star_key(void) {
     if (BITS)
-        gSecondCameraFocus = spawn_object(o, MODEL_STAR, bhvGrandStar);
+        gSecondCameraFocus = spawn_object(o, MODEL_BOWSER_KEY, bhvGrandStar);
     else {
         gSecondCameraFocus = spawn_object(o, MODEL_BOWSER_KEY, bhvBowserKey);
         cur_obj_play_sound_2(SOUND_GENERAL2_BOWSER_KEY);

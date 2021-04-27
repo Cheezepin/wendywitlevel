@@ -348,4 +348,6 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "brige/collision_header.h"
 
+#include "fourforfour/geo_header.h"
+
 #endif

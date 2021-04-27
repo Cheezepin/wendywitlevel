@@ -438,7 +438,7 @@ void change_vi(OSViMode *mode, int width, int height){
 void thread1_idle(UNUSED void *arg) {
 
     osCreateViManager(OS_PRIORITY_VIMGR);
-    osViModeTable[OS_VI_NTSC_LAN1].comRegs.vSync = 2200;
+    //osViModeTable[OS_VI_NTSC_LAN1].comRegs.vSync = 2200;
 	switch ( osTvType ) {
 	case OS_TV_NTSC:
 		// NTSC
