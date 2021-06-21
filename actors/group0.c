@@ -29,3 +29,6 @@
 #include "brige/model.inc.c"
 #include "brige/collision.inc.c"
 #include "fourforfour/model.inc.c"
+#include "wobinbade/model.inc.c"
+#include "wobinbade/anims/data.inc.c"
+#include "wobinbade/anims/table.inc.c"

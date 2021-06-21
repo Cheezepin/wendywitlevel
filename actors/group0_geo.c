@@ -19,3 +19,4 @@
 
 #include "brige/geo.inc.c"
 #include "fourforfour/geo.inc.c"
+#include "wobinbade/geo.inc.c"

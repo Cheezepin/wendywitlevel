@@ -587,5 +587,6 @@
 #define MODEL_CASTLE_GROUNDS_WARP_PIPE            MODEL_LEVEL_GEOMETRY_16   // warp_pipe_geo
 
 #define MODEL_BRIGE 0xFF
+#define MODEL_WOBINBADE 0xFE
 
 #endif // MODEL_IDS_H

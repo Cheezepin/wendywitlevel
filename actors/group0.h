@@ -350,4 +350,8 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "fourforfour/geo_header.h"
 
+#include "wobinbade/geo_header.h"
+
+
+#include "wobinbade/anim_header.h"
 #endif
